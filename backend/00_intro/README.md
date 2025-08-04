@@ -40,7 +40,7 @@ INCLUDING DEPENDENCY MoveStdlib
 BUILDING Intro
 Running Move unit tests
 [debug] "Hello, World!"
-[ PASS    ] introduccion::practica_sui::prueba
+[ PASS    ] introducao::pratica_sui::teste
 Test result: OK. Total tests: 1; passed: 1; failed: 0
 ```
 
@@ -97,12 +97,12 @@ E, por último, precisamos de uma forma de executar esta função. Por enquanto,
 
 ```rust
     #[test]
-    fun prueba() {
+    fun teste() {
         practica();
     }
 ```
 
-Ao executarmos `sui move test`, estamos dizendo à CLI para executar todas as funções que têm um bloco `[#test]`, neste caso, ele executa nossa função `prueba`, que por sua vez chama a função `practica`.
+Ao executarmos `sui move test`, estamos dizendo à CLI para executar todas as funções que têm um bloco `[#test]`, neste caso, ele executa nossa função `teste`, que por sua vez chama a função `pratica`.
 
 ## Saída
 
@@ -116,7 +116,7 @@ INCLUDING DEPENDENCY MoveStdlib
 BUILDING Intro
 Running Move unit tests
 [debug] "Hello, World!"
-[ PASS    ] introduccion::practica_sui::prueba
+[ PASS    ] introducao::pratica_sui::teste
 Test result: OK. Total tests: 1; passed: 1; failed: 0
 ```
 
@@ -145,13 +145,13 @@ Em seguida, obtemos a mensagem que a função de teste executa, no nosso caso, a
 
 Agora, na próxima linha, podemos obter informações sobre exatamente quais funções foram executadas:
 ```sh
-[ PASS    ] introduccion::practica_sui::prueba
+[ PASS    ] introducao::pratica_sui::teste
 ```
 A estrutura é algo como:
 ```rust
 endereco::nome_do_modulo::funcao
 ```
-Com isso, podemos verificar que a função que foi executada foi `prueba`.
+Com isso, podemos verificar que a função que foi executada foi `teste`.
 
 Por fim, obtemos informações sobre os testes de unidade, como quantos foram executados e quantos passaram:
 
